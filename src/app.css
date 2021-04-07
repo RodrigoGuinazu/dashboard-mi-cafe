@@ -4777,6 +4777,13 @@ input[type=submit].btn-block {
     padding: 1.25rem
 }
 
+.card-body:hover {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: #333;
+    font-weight: bold;
+}
+
 .card-title {
     margin-bottom: .75rem
 }
@@ -6761,7 +6768,11 @@ button.bg-success:hover {
 }
 
 .bg-info {
-    background-color: #36b9cc !important
+    background-color: #333 !important
+}
+
+.bg-info:hover {
+    background-color: #D1B894 !important;
 }
 
 a.bg-info:focus,
@@ -10780,8 +10791,7 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #4e73df;
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-color: #D1B894;
     background-size: cover
 }
 
@@ -11322,7 +11332,6 @@ a:focus {
     font-weight: 800;
     padding: 1.5rem 1rem;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: .05rem;
     z-index: 1
 }
@@ -11494,7 +11503,7 @@ a:focus {
 }
 
 .sidebar-light hr.sidebar-divider {
-    border-top: 1px solid #eaecf4
+    border-top: 1px solid rgba(0, 0, 0, .5)
 }
 
 .sidebar-light .sidebar-heading {
@@ -11550,31 +11559,31 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, .15)
+    border-top: 1px solid rgba(0, 0, 0, .3)
 }
 
 .sidebar-dark .sidebar-heading {
-    color: rgba(255, 255, 255, .4)
+    color: rgba(0, 0, 0, .65)
 }
 
 .sidebar-dark .nav-item .nav-link {
-    color: rgba(255, 255, 255, .8)
+    color: rgb(0, 0, 0)
 }
 
 .sidebar-dark .nav-item .nav-link i {
-    color: rgba(255, 255, 255, .3)
+    color: rgb(0, 0, 0)
 }
 
 .sidebar-dark .nav-item .nav-link:active,
 .sidebar-dark .nav-item .nav-link:focus,
 .sidebar-dark .nav-item .nav-link:hover {
-    color: #fff
+    color: white
 }
 
 .sidebar-dark .nav-item .nav-link:active i,
 .sidebar-dark .nav-item .nav-link:focus i,
 .sidebar-dark .nav-item .nav-link:hover i {
-    color: #fff
+    color: white
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
@@ -11582,11 +11591,13 @@ a:focus {
 }
 
 .sidebar-dark .nav-item.active .nav-link {
-    color: #fff
+    color: black;
+    font-weight: bold;
 }
 
 .sidebar-dark .nav-item.active .nav-link i {
-    color: #fff
+    color: black;
+    font-weight: bold;
 }
 
 .sidebar-dark #sidebarToggle {
@@ -12233,9 +12244,22 @@ footer.sticky-footer {
 
 footer.sticky-footer .copyright {
     line-height: 1;
-    font-size: .8rem
+    font-size: 1.2rem
 }
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
+}
+
+.miCafe {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.3rem;
+    color: black;
+}
+
+.tipografia {
+    font-family: 'Yellowtail', cursive;
+    color: black;
+    margin-left: 1px;
+    margin-right: 5px;
 }
