@@ -5245,8 +5245,8 @@ a.badge-warning:focus {
 }
 
 .badge-danger {
-    color: #fff;
-    background-color: #e74a3b
+    color: white;
+    background-color: black
 }
 
 a.badge-danger:focus,
@@ -10453,7 +10453,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #4e73df !important
+    color: black !important
 }
 
 a.text-primary:focus,
@@ -10471,7 +10471,7 @@ a.text-secondary:hover {
 }
 
 .text-success {
-    color: #1cc88a !important
+    color: black !important
 }
 
 a.text-success:focus,
@@ -10489,7 +10489,7 @@ a.text-info:hover {
 }
 
 .text-warning {
-    color: #f6c23e !important
+    color: black !important
 }
 
 a.text-warning:focus,
@@ -10498,7 +10498,7 @@ a.text-warning:hover {
 }
 
 .text-danger {
-    color: #e74a3b !important
+    color: black !important
 }
 
 a.text-danger:focus,
@@ -10931,7 +10931,7 @@ a:focus {
 }
 
 .border-left-primary {
-    border-left: .25rem solid #4e73df !important
+    border-left: .25rem solid #D1B894 !important
 }
 
 .border-bottom-primary {
@@ -10947,7 +10947,7 @@ a:focus {
 }
 
 .border-left-success {
-    border-left: .25rem solid #1cc88a !important
+    border-left: .25rem solid #D1B894 !important
 }
 
 .border-bottom-success {
@@ -10963,7 +10963,7 @@ a:focus {
 }
 
 .border-left-warning {
-    border-left: .25rem solid #f6c23e !important
+    border-left: .25rem solid #D1B894 !important
 }
 
 .border-bottom-warning {
