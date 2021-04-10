@@ -4,12 +4,10 @@ function TableTitle() {
     return (
         <>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Categories</th>
-                <th>Colors</th>
-                <th>Stock</th>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Categoría</th>
             </tr>
         </>
     )
