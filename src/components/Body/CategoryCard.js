@@ -8,9 +8,11 @@ function CategoryCard(props) {
         <>
             <div className="col-lg-6 mb-4">
                 <div className="card bg-info text-white shadow">
-                    <div className="card-body">       
-                        {props.title}: {props.count} productos
-                    </div>
+                    <a href={props.link} style={{textDecoration: 'none', color: 'white'}}>
+                        <div className="card-body">       
+                            {props.title}: {props.count} productos
+                        </div>
+                    </a>
                 </div>
             </div>          
         </>
