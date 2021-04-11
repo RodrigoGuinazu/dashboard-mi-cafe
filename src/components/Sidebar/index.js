@@ -18,7 +18,7 @@ function SideBar() {
             
                 <div className="sidebar-heading">Actions</div>
             
-                <MenuTitles clase="nav-item" icon="fas fa-fw fa-folder" title=" Pages"/>
+                <MenuTitles clase="nav-item" icon="fas fa-fw fa-plus" title=" Crear Producto" link="http://localhost:3030/productos/crear"/>
 
                 <MenuTitles clase="nav-item" icon="fas fa-fw fa-chart-area" title=" Charts"/>
 
