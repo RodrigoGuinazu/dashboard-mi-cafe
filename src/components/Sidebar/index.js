@@ -16,13 +16,11 @@ function SideBar() {
             
                 <hr className="sidebar-divider" />
             
-                <div className="sidebar-heading">Actions</div>
+                <div className="sidebar-heading">Secciones</div>
             
                 <MenuTitles clase="nav-item" icon="fas fa-fw fa-plus" title=" Crear Producto" link="http://localhost:3030/productos/crear"/>
 
-                <MenuTitles clase="nav-item" icon="fas fa-fw fa-chart-area" title=" Charts"/>
-
-                <MenuTitles clase="nav-item" icon="fas fa-fw fa-table" title=" Tables"/>
+                <MenuTitles clase="nav-item" icon="fas fa-fw fa-table" title=" Tablas" href="#tabla-productos"/>
         
                 <hr className="sidebar-divider d-none d-md-block" />
             </ul>
