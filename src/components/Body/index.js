@@ -11,15 +11,12 @@ function Body() {
     useEffect(() => {
        fetch("http://localhost:3030/api/products/")
        .then(res => res.json())
-       .then(data =>
-        {
-            /*console.log(data)*/
+       .then(data =>{
             const categories = data.meta.countByCategory
             const count = data.meta.count
             setProductos({count:count, categories:categories})
         })
     }, [])
-    /*console.log(productos)*/
 
     const [usuarios, setUsuarios] = useState({total:""})
     useEffect(() => {
@@ -45,30 +42,25 @@ function Body() {
             </div>
             <div className="row">
 
-            <div className="col-lg-6 mb-4">
-                
-                        <ContainerBig title="Last product in Data Dase">
-                            <div className="card-body">
-                                <div className="text-center">
-                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="/images/product_dummy.svg" alt="dummy" />
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-                                <a target="_blank" rel="nofollow" href="/">View product detail</a>
+                <div className="col-lg-6 mb-4">
+                    <ContainerBig title="Last product in Data Dase">
+                        <div className="card-body">
+                            <div className="text-center">
+                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="/images/product_dummy.svg" alt="dummy" />
                             </div>
-                        </ContainerBig>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
+                            <a target="_blank" rel="nofollow" href="/">View product detail</a>
+                        </div>
+                    </ContainerBig>
+                </div>  
                 
-            </div>  
-
                 <div className="col-lg-6 mb-4">
                     <ContainerBig title="Categorías de productos">
                         <div className="card-body">
                             <div className="row">
                                 {productos.categories.map(category => (
-                                    <CategoryCard title={category.title} count={category.count}/>
-                                )
-                                )}
-                                    
-                                    
+                                    <CategoryCard link={category.link} title={category.title} count={category.count}/>
+                                ))}              
                             </div>
                         </div>
                     </ContainerBig>       
