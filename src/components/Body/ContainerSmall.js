@@ -11,7 +11,7 @@ function ContainerSmall(props) {
                     <div className="card-body">
                         <div className="row no-gutters align-items-center">
                             <div className="col mr-2">
-                                <div className={props.colorText}> {props.title}</div>
+                                <div className={props.colorText}>{props.title}</div>
                                 <div className="h5 mb-0 font-weight-bold text-gray-800">{props.number}</div>
                             </div>
                             <div className="col-auto">
