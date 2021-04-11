@@ -33,23 +33,23 @@ function Body() {
     return (
         <>
             <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+                <h1 className="h3 mb-0 text-gray-800">Dashboard Mí Café</h1>
             </div>
             <div className="row">
                 <ContainerSmall title="Productos en Base de Datos" number={productos.count} icon="fas fa-clipboard-list fa-2x text-gray-300" color="card border-left-primary shadow h-100 py-2" colorText="text-xs font-weight-bold text-primary text-uppercase mb-1"/>
                 <ContainerSmall title="Usuarios en Base de Datos" number={usuarios.total} icon="fas fa-user-check fa-2x text-gray-300" color="card border-left-warning shadow h-100 py-2" colorText="text-xs font-weight-bold text-warning text-uppercase mb-1"/>
-                <ContainerSmall title="Categorías en Base de Datos" number="$546.456" icon="fas fa-dollar-sign fa-2x text-gray-300" color="card border-left-success shadow h-100 py-2" colorText="text-xs font-weight-bold text-success text-uppercase mb-1"/>
+                <ContainerSmall title="Categorías en Base de Datos" number={productos.categories.length} icon="fas fa-list fa-2x text-gray-300" color="card border-left-success shadow h-100 py-2" colorText="text-xs font-weight-bold text-success text-uppercase mb-1"/>
             </div>
             <div className="row">
 
                 <div className="col-lg-6 mb-4">
-                    <ContainerBig title="Last product in Data Dase">
+                    <ContainerBig title="Último producto en Base de Datos">
                         <div className="card-body">
                             <div className="text-center">
                                 <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="/images/product_dummy.svg" alt="dummy" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-                            <a target="_blank" rel="nofollow" href="/">View product detail</a>
+                            <p>Descripción del último producto</p>
+                            <a target="_blank" rel="nofollow" href="/">Ver detalle de producto</a>
                         </div>
                     </ContainerBig>
                 </div>  
