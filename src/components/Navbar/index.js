@@ -30,8 +30,8 @@ function Navbar() {
 
                 <li className="nav-item dropdown no-arrow">
                     <a className="nav-link dropdown-toggle" href="/" id="userDropdown">
-                        <span className="mr-2 d-none d-lg-inline text-gray-600 small">Admin Mí Café</span>
-                        <img className="img-profile rounded-circle" src="/images/imagen-1611157219600.jpg" width="60" alt="avatar" />
+                        <span className="mr-2 d-none d-lg-inline text-gray-600 small"><a href="http://localhost:3030/usuarios/perfil">Admin Mí Café</a></span>
+                        <a href="http://localhost:3030/usuarios/perfil"><img className="img-profile rounded-circle" src="/images/imagen-1611157219600.jpg" width="60" alt="avatar" /></a>
                     </a>
                 </li>
 
