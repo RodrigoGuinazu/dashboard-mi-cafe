@@ -5,8 +5,10 @@ function MenuTitles(props) {
         <>
             <li className={props.clase}>
                 <a className="nav-link" href="/">
-                    <i className={props.icon}></i>
-                    <span>{props.title}</span>
+                    <a style={{textDecoration: 'none', color: 'black'}} href={props.link}>
+                        <i className={props.icon}></i>
+                        <span>{props.title}</span>
+                    </a>
                 </a>
             </li>    
         </>
