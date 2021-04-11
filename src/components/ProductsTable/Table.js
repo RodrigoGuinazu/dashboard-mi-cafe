@@ -27,7 +27,7 @@ function Table() {
                     </thead>
                     <tbody>
                         {productos.map(product => (
-                            <TableBody title={product.name} description={product.description} price={product.price} category={product.category.name}/>
+                            <TableBody link={product.link} edit={product.edit} title={product.name} description={product.description} price={product.price} category={product.category.name}/>
                             )
                         )}
                     </tbody>

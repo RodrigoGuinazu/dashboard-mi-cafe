@@ -5,6 +5,7 @@ function TableTitle() {
         <>
             <tr>
                 <th>Producto</th>
+                <th>Editar</th>
                 <th>Descripción</th>
                 <th>Precio</th>
                 <th>Categoría</th>

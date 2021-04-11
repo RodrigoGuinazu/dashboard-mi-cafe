@@ -4,9 +4,10 @@ function TableBody(props) {
     return (
         <>
             <tr>
-                <td>{props.title}</td>
+                <td><a href={props.link}>{props.title}</a></td>
+                <td><a href={props.edit}>Editar</a></td>
                 <td>{props.description}</td>
-                <td>{props.price}</td>
+                <td>${props.price}</td>
                 <td>{props.category}</td>
             </tr> 
         </>
