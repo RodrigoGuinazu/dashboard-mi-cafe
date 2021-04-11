@@ -4,7 +4,7 @@ function Logo() {
     return (
         <>
             <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                <h2 className="miCafe">Mí Café</h2>
+                <a className="miCafeLink" href="http://localhost:3030/"><h2 className="miCafe">Mí Café</h2></a>
             </a>
         </>
     )
