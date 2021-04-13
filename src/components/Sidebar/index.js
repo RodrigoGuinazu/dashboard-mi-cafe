@@ -20,7 +20,7 @@ function SideBar() {
             
                 <MenuTitles clase="nav-item" icon="fas fa-fw fa-plus" title=" Crear Producto" link="http://localhost:3030/productos/crear"/>
 
-                <MenuTitles clase="nav-item" icon="fas fa-fw fa-table" title=" Tablas" href="#tabla-productos"/>
+                <MenuTitles clase="nav-item" icon="fas fa-fw fa-table" title=" Tablas" link="#tabla-productos"/>
         
                 <hr className="sidebar-divider d-none d-md-block" />
             </ul>
