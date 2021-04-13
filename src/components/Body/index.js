@@ -30,6 +30,18 @@ function Body() {
         })
     }, [])
 
+    const [ultProd, setUltProd] = useState({data:{}})
+    useEffect(() => {
+       fetch("http://localhost:3030/api/products/ultimo")
+       .then(res => res.json())
+       .then(ultimo =>
+        {
+            const data = ultimo.data
+            console.log(data)
+            setUltProd({data:data})
+        })
+    }, [])
+
     return (
         <>
             <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -46,10 +58,11 @@ function Body() {
                     <ContainerBig title="Último producto en Base de Datos">
                         <div className="card-body">
                             <div className="text-center">
-                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="/images/product_dummy.svg" alt="dummy" />
+                                <h3>{ultProd.data.name}</h3>
+                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={ultProd.data.image} alt="dummy"/>
                             </div>
-                            <p>Descripción del último producto</p>
-                            <a target="_blank" rel="nofollow" href="/">Ver detalle de producto</a>
+                            <p>{ultProd.data.description}</p>
+                            <a target="_blank" rel="nofollow" href={ultProd.data.detail}>Ver detalle de producto</a>
                         </div>
                     </ContainerBig>
                 </div>  
